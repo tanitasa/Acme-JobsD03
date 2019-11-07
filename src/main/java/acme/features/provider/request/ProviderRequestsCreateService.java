@@ -63,6 +63,10 @@ public class ProviderRequestsCreateService implements AbstractCreateService<Prov
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		if (null != entity.getDeadline() && entity.getDeadline().before(new Date(System.currentTimeMillis() - 1))) {
+			errors.add("deadline", "Must be in the future");
+		}
 	}
 
 	@Override

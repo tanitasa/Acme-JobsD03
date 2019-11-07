@@ -63,6 +63,16 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
+
+		if (null != entity.getMaxReward() && null != entity.getMinReward() && null != entity.getMaxReward().getAmount() && null != entity.getMinReward().getAmount() && entity.getMaxReward().getAmount() < entity.getMinReward().getAmount()) {
+			errors.add("minReward", "Min reward must be minor than max reward");
+			errors.add("maxReward", "Max reward must be higher than min reward");
+		}
+
+		if (null != entity.getDeadline() && entity.getDeadline().before(new Date(System.currentTimeMillis() - 1))) {
+			errors.add("deadline", "Must be in the future");
+		}
+
 	}
 
 	@Override
