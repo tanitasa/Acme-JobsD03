@@ -23,7 +23,7 @@
 	<acme:form-url     code="administrator.companyRecord.form.label.web" path="web"/>
 	<acme:form-textbox code="administrator.companyRecord.form.label.phoneNumber" path="phoneNumber" placeholder="+NNN (NNNNN) NNNNNNNNNN"/>
 	<acme:form-textbox code="administrator.companyRecord.form.label.email" path="email"/>
-	<acme:form-textbox code="administrator.companyRecord.form.label.isIncorporated" path="isIncorporated"/>
+	<acme:form-checkbox code="administrator.companyRecord.form.label.isIncorporated" path="isIncorporated"/>
 	
 	<acme:form-integer code="administrator.companyRecord.form.label.stars" path="stars"/>
 	
