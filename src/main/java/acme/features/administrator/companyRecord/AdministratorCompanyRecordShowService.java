@@ -1,7 +1,5 @@
 
-package acme.features.anonymous.companyRecord;
-
-import java.util.Collection;
+package acme.features.administrator.companyRecord;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,19 +7,19 @@ import org.springframework.stereotype.Service;
 import acme.entities.companyRecords.CompanyRecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Anonymous;
-import acme.framework.services.AbstractListService;
+import acme.framework.entities.Administrator;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousCompanyRecordListService implements AbstractListService<Anonymous, CompanyRecord> {
+public class AdministratorCompanyRecordShowService implements AbstractShowService<Administrator, CompanyRecord> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousCompanyRecordRepository repository;
+	private AdministratorCompanyRecordRepository repository;
 
 
-	// AbstractListService<Authenticated, Request> interface ---------------
+	// AbstractShowService<Authenticated, CompanyRecord> interface ---------------
 
 	@Override
 	public boolean authorise(final Request<CompanyRecord> request) {
@@ -36,21 +34,19 @@ public class AnonymousCompanyRecordListService implements AbstractListService<An
 		assert entity != null;
 		assert model != null;
 
-		if (entity.getIsIncorporated().equals(true)) {
-			entity.setName(entity.getName() + ",INC");
-		} else {
-			entity.setName(entity.getName() + ",LLC");
-		}
-
 		request.unbind(entity, model, "name", "sector", "ceoName", "description", "web", "phoneNumber", "email", "isIncorporated", "stars");
+
 	}
 
 	@Override
-	public Collection<CompanyRecord> findMany(final Request<CompanyRecord> request) {
-		assert request != null;
-		Collection<CompanyRecord> result;
+	public CompanyRecord findOne(final Request<CompanyRecord> companyRecord) {
+		assert companyRecord != null;
 
-		result = this.repository.findManyAll();
+		CompanyRecord result;
+		int id;
+
+		id = companyRecord.getModel().getInteger("id");
+		result = this.repository.findOneCompanyRecordById(id);
 
 		return result;
 	}

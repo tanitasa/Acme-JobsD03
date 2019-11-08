@@ -54,7 +54,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement.list = Lista de anuncios
-
+master.menu.administrator.companyRecords.list = Lista de compañias
+master.menu.administrator.companyRecords.create = Crear una compañia
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor

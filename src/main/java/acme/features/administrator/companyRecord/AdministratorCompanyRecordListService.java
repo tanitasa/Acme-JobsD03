@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.companyRecord;
+package acme.features.administrator.companyRecord;
 
 import java.util.Collection;
 
@@ -9,16 +9,16 @@ import org.springframework.stereotype.Service;
 import acme.entities.companyRecords.CompanyRecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousCompanyRecordListService implements AbstractListService<Anonymous, CompanyRecord> {
+public class AdministratorCompanyRecordListService implements AbstractListService<Administrator, CompanyRecord> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousCompanyRecordRepository repository;
+	private AdministratorCompanyRecordRepository repository;
 
 
 	// AbstractListService<Authenticated, Request> interface ---------------
@@ -35,12 +35,6 @@ public class AnonymousCompanyRecordListService implements AbstractListService<An
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-
-		if (entity.getIsIncorporated().equals(true)) {
-			entity.setName(entity.getName() + ",INC");
-		} else {
-			entity.setName(entity.getName() + ",LLC");
-		}
 
 		request.unbind(entity, model, "name", "sector", "ceoName", "description", "web", "phoneNumber", "email", "isIncorporated", "stars");
 	}
