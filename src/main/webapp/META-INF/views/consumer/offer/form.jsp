@@ -14,6 +14,7 @@
 
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <acme:form>
 	<acme:form-textbox code="consumer.offer.form.label.ticker" path="ticker"/>
@@ -27,6 +28,19 @@
 	<acme:form-double code="consumer.offer.form.label.minReward" path="minReward"/>
 	<acme:form-double code="consumer.offer.form.label.maxReward" path="maxReward"/>
 	
+	<div class="form-group">
+	<div class="form-check">
+		<input id="acceptL" required="required" name="acceptL" type="checkbox" class="form-check-input"
+			<jstl:if test="${requestScope[accept] == 'true'}">
+				checked
+			</jstl:if>/> 
+		<input id="accept" name="accept" type="hidden" value="<jstl:out value="${requestScope[accept]}"/>"/> 
+		<label for="acceptL"> 
+			<spring:message	code="consumer.offer.label.accept"/>
+		</label>
+	</div>
+	<acme:form-errors path="${accept}"/>
+	</div>
 	<acme:form-submit test="${command == 'create'}"
 	code="consumer.offer.form.button.create" action="/consumer/offer/create"/>
 	

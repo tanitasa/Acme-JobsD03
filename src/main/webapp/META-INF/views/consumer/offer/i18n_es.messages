@@ -17,3 +17,4 @@ consumer.offer.form.label.minReward = Recompensa minima
 consumer.offer.form.label.maxReward = Recompensa maxima
 consumer.offer.form.button.return = Volver
 consumer.offer.form.button.create = Crear
+consumer.offer.label.accept = Acepto crear la oferta

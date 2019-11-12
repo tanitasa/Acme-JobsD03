@@ -17,3 +17,4 @@ consumer.offer.form.label.minReward = Min reward
 consumer.offer.form.label.maxReward = Max reward
 consumer.offer.form.button.return = Return
 consumer.offer.form.button.create = Create
+consumer.offer.label.accept = I do accept create offer

@@ -16,3 +16,4 @@ provider.request.form.label.description = Descripcion
 provider.request.form.label.reward = Recompensa
 provider.request.form.button.return = Volver
 provider.request.form.button.create = Crear
+provider.request.label.accept = Acepto crear la peticion
