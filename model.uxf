@@ -307,7 +307,7 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>Offer
 --
-+ ticker: String {Pattern, NotBlank} 
++ ticker: String {unique, Pattern, NotBlank} 
 + title: String {NotBlank} 
 + creationMoment: Date {TemporalType(TIMESTAMP),Past} 
 + deadline: Date {TemporalType(TIMESTAMP)} 
@@ -326,7 +326,7 @@ has v</panel_attributes>
     </coordinates>
     <panel_attributes>Request
 --
-+ ticker: String {Pattern, NotBlank} 
++ ticker: String {unique, Pattern, NotBlank} 
 + title: String {NotBlank} 
 + creationMoment: Date {TemporalType(TIMESTAMP),Past} 
 + deadline: Date {TemporalType(TIMESTAMP)} 
