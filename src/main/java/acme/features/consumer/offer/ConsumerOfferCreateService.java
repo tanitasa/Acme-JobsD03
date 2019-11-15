@@ -73,6 +73,15 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 			errors.add("deadline", "Must be in the future");
 		}
 
+		if (null != entity.getTicker()) {
+			for (Offer o : this.repository.findManyAll()) {
+				if (o.getTicker().equals(entity.getTicker())) {
+					errors.add("ticker", "Already exist");
+					break;
+				}
+			}
+		}
+
 	}
 
 	@Override

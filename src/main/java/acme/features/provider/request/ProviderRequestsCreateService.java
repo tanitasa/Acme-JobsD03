@@ -67,6 +67,15 @@ public class ProviderRequestsCreateService implements AbstractCreateService<Prov
 		if (null != entity.getDeadline() && entity.getDeadline().before(new Date(System.currentTimeMillis() - 1))) {
 			errors.add("deadline", "Must be in the future");
 		}
+
+		if (null != entity.getTicker()) {
+			for (Requests r : this.repository.findManyAll()) {
+				if (r.getTicker().equals(entity.getTicker())) {
+					errors.add("ticker", "Already exist");
+					break;
+				}
+			}
+		}
 	}
 
 	@Override
