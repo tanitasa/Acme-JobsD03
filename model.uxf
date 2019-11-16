@@ -356,24 +356,28 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>322</x>
-      <y>350</y>
+      <y>560</y>
       <w>245</w>
-      <h>70</h>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Challenge
 --
 + title: String {NotBlank} 
 + deadline: Date {TemporalType(TIMESTAMP)} 
-+ goals: Map&lt;String,Double&gt; {NotNull}
 + description: String {NotBlank}
-</panel_attributes>
++ goldEn: String {NotBlank}
++ silverEn: String {NotBlank}
++ bronzeEn: String {NotBlank}
++ rewardGold: double {NotNull}
++ rewardSilver: double {NotNull}
++ rewardBronze: double {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>322</x>
-      <y>434</y>
+      <y>427</y>
       <w>245</w>
       <h>126</h>
     </coordinates>
@@ -394,7 +398,7 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>322</x>
-      <y>574</y>
+      <y>350</y>
       <w>238</w>
       <h>70</h>
     </coordinates>
