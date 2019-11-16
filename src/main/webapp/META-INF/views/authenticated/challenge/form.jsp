@@ -27,24 +27,25 @@
 	<acme:form-textbox code="authenticated.challenge.form.label.description" path="description" />
 
 
- <table border="1" >
+<table border="1" >
 	
 <tr><th> <acme:message code="authenticated.challenge.form.label.goals" /></th> <th><acme:message code="authenticated.challenge.form.label.rewards" /></th></tr>
 	
 	
-		<tr><th colspan="2" align="center"><acme:message code="administrator.challenge.form.label.gold" /></th>
+	 <tr><th colspan="2" align="center"><acme:message code="authenticated.challenge.form.label.gold" /></th></tr>
 		<tr>
     		<td><acme:form-textbox code="" path="goldEn" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
  		 </tr>
-		<tr><th colspan="2" align="center"><acme:message code="administrator.challenge.form.label.silver" /></th>
-		<tr>
+		<tr><th colspan="2" align="center"><acme:message code="authenticated.challenge.form.label.silver" /></th></tr>
+		<Tr>
 			<td><acme:form-textbox code="" path="silverEn"  /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
 		</tr>
-		<tr><th colspan="2" align="center"><acme:message code="administrator.challenge.form.label.bronze" /></th></tr>
+		<tr><th colspan="2" align="center"><acme:message code="authenticated.challenge.form.label.bronze" /></th></tr>
 		<tr>
 			<td><acme:form-textbox code="" path="bronzeEn" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
 		</tr>
-
+		
+	
 	
 	</table>
 	<br> 
