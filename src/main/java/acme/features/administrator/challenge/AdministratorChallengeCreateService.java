@@ -1,6 +1,8 @@
 
 package acme.features.administrator.challenge;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,6 +63,16 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert entity != null;
 		assert errors != null;
 
+		if (null != entity.getDeadline() && entity.getDeadline().before(new Date(System.currentTimeMillis() - 1))) {
+			errors.add("deadline", "Must be in the future");
+		}
+
+		if (null != entity.getRewardGold() && null != entity.getRewardSilver() && null != entity.getRewardBronze() && null != entity.getRewardGold().getAmount() && null != entity.getRewardSilver().getAmount() && null != entity.getRewardBronze().getAmount()
+			&& (entity.getRewardGold().getAmount() < entity.getRewardSilver().getAmount() || entity.getRewardGold().getAmount() < entity.getRewardBronze().getAmount() || entity.getRewardSilver().getAmount() < entity.getRewardBronze().getAmount())) {
+			errors.add("rewardGold", "Gold must be higher than silver, silver must be higher than bronze");
+			errors.add("rewardSilver", "Gold must be higher than silver, silver must be higher than bronze");
+			errors.add("rewardBronze", "Gold must be higher than silver, silver must be higher than bronze");
+		}
 	}
 
 	@Override

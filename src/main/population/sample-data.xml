@@ -223,13 +223,13 @@
 		<property name="description" value="descr challenge 1" />
 		<property name="goldEn" value="GOLD" />
 		<!-- <property name="goldEs" value="ORO" /> -->
-		<property name="rewardGold" value="100.0" />
+		<property name="rewardGold" ref="money3" />
 		<property name="silverEn" value="SILVER" />
 		<!-- <property name="silverEs" value="PLATA" /> -->
-		<property name="rewardSilver" value="200.0" />
+		<property name="rewardSilver" ref="money2" />
 		<property name="bronzeEn" value="BRONZE" />
 		<!-- <property name="bronzeEs" value="BRONCE" /> -->
-		<property name="rewardBronze" value="300.0" />
+		<property name="rewardBronze" ref="money1" />
 		
   	</bean>
   	
@@ -239,13 +239,13 @@
 		<property name="description" value="descr challenge 2" />
 		<property name="goldEn" value="GOLD" />
 		<!-- <property name="goldEs" value="ORO" /> -->
-		<property name="rewardGold" value="100.0" />
+		<property name="rewardGold" ref="money6" />
 		<property name="silverEn" value="SILVER" />
 		<!-- <property name="silverEs" value="PLATA" /> -->
-		<property name="rewardSilver" value="200.0" />
+		<property name="rewardSilver" ref="money4" />
 		<property name="bronzeEn" value="BRONZE" />
 		<!-- <property name="bronzeEs" value="BRONCE" /> -->
-		<property name="rewardBronze" value="300.0" />
+		<property name="rewardBronze" ref="money1" />
   	</bean>
   	
   	  	<bean id="challenge3" class="acme.entities.challenges.Challenge">
@@ -254,13 +254,13 @@
 		<property name="description" value="descr challenge 3" />
 		<property name="goldEn" value="GOLD" />
 		<!-- <property name="goldEs" value="ORO" /> -->
-		<property name="rewardGold" value="100.0" />
+		<property name="rewardGold" ref="money4" />
 		<property name="silverEn" value="SILVER" />
 		<!-- <property name="silverEs" value="PLATA" /> -->
-		<property name="rewardSilver" value="200.0" />
+		<property name="rewardSilver" ref="money3" />
 		<property name="bronzeEn" value="BRONZE" />
 		<!-- <property name="bronzeEs" value="BRONCE" /> -->
-		<property name="rewardBronze" value="300.0" />
+		<property name="rewardBronze" ref="money1" />
   	</bean>
   	
   	  	<bean id="challenge4" class="acme.entities.challenges.Challenge">
@@ -269,13 +269,13 @@
 		<property name="description" value="descr challenge 4" />
 		<property name="goldEn" value="GOLD" />
 		<!-- <property name="goldEs" value="ORO" /> -->
-		<property name="rewardGold" value="100.0" />
+		<property name="rewardGold" ref="money6" />
 		<property name="silverEn" value="SILVER" />
 		<!-- <property name="silverEs" value="PLATA" /> -->
-		<property name="rewardSilver" value="200.0" />
+		<property name="rewardSilver" ref="money5" />
 		<property name="bronzeEn" value="BRONZE" />
 		<!-- <property name="bronzeEs" value="BRONCE" /> -->
-		<property name="rewardBronze" value="300.0" />
+		<property name="rewardBronze" ref="money3" />
   	</bean>
   	
   	  	<bean id="challenge5" class="acme.entities.challenges.Challenge">
@@ -284,13 +284,13 @@
 		<property name="description" value="descr challenge 5" />
 		<property name="goldEn" value="GOLD" />
 		<!-- <property name="goldEs" value="ORO" /> -->
-		<property name="rewardGold" value="100.0" />
+		<property name="rewardGold" ref="money5" />
 		<property name="silverEn" value="SILVER" />
 		<!-- <property name="silverEs" value="PLATA" /> -->
-		<property name="rewardSilver" value="200.0" />
+		<property name="rewardSilver" ref="money4" />
 		<property name="bronzeEn" value="BRONZE" />
 		<!-- <property name="bronzeEs" value="BRONCE" /> -->
-		<property name="rewardBronze" value="300.0" />
+		<property name="rewardBronze" ref="money2" />
   	</bean>
   	
   	<!-- Announcement -->
