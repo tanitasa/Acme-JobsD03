@@ -40,7 +40,6 @@ public class Challenge extends DomainEntity {
 	@Pattern(regexp = "^GOLD$")
 	private String				goldEn;
 
-	@NotBlank
 	@Pattern(regexp = "^ORO$")
 	private String				goldEs;
 
@@ -51,7 +50,6 @@ public class Challenge extends DomainEntity {
 	@Pattern(regexp = "^SILVER$")
 	private String				silverEn;
 
-	@NotBlank
 	@Pattern(regexp = "^PLATA$")
 	private String				silverEs;
 
@@ -62,7 +60,6 @@ public class Challenge extends DomainEntity {
 	@Pattern(regexp = "^BRONZE$")
 	private String				bronzeEn;
 
-	@NotBlank
 	@Pattern(regexp = "^BRONCE$")
 	private String				bronzeEs;
 

@@ -56,6 +56,8 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement.list = Lista de anuncios
 master.menu.administrator.companyRecords.list = Lista de compañias
 master.menu.administrator.companyRecords.create = Crear una compañia
+master.menu.administrator.challenges.list = Lista de cambios
+master.menu.administrator.challenges.create = Crear un cambio
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
