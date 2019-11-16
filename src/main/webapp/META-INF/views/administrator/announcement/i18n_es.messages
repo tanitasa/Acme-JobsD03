@@ -17,4 +17,7 @@ administrator.announcement.form.label.creationMoment = Fecha de creación
 administrator.announcement.form.label.link = Link
 administrator.announcement.form.label.description = Descripción
 
+administrator.announcement.button.create = Crear
+administrator.announcement.button.delete = Borrar
+administrator.announcement.button.update = Actualizar
 administrator.announcement.form.button.return = Volver

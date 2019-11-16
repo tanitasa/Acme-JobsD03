@@ -44,6 +44,7 @@
 			<acme:menu-suboption code="master.menu.administrator.announcement.list" action="/administrator/announcement/list"/>	
 			<acme:menu-suboption code="master.menu.administrator.companyRecords.list" action="/administrator/company-record/list"/>
 			<acme:menu-suboption code="master.menu.administrator.companyRecords.create" action="/administrator/company-record/create"/>
+			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create"/>
 			<acme:menu-suboption code="master.menu.administrator.challenges.list" action="/administrator/challenge/list"/>
 			<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenge/create"/>
 			<acme:menu-separator/>
@@ -76,4 +77,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-
