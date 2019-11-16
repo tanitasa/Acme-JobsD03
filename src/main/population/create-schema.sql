@@ -34,16 +34,13 @@
        `id` integer not null,
         `version` integer not null,
         `bronze_en` varchar(255),
-        `bronze_es` varchar(255),
         `deadline` datetime(6),
         `description` varchar(255),
         `gold_en` varchar(255),
-        `gold_es` varchar(255),
         `reward_bronze` double precision not null,
         `reward_gold` double precision not null,
         `reward_silver` double precision not null,
         `silver_en` varchar(255),
-        `silver_es` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;

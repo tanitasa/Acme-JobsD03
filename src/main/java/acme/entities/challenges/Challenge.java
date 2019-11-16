@@ -9,7 +9,6 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -37,31 +36,19 @@ public class Challenge extends DomainEntity {
 	private String				description;
 
 	@NotBlank
-	@Pattern(regexp = "^GOLD$")
 	private String				goldEn;
-
-	@Pattern(regexp = "^ORO$")
-	private String				goldEs;
 
 	@NotNull
 	private double				rewardGold;
 
 	@NotBlank
-	@Pattern(regexp = "^SILVER$")
 	private String				silverEn;
-
-	@Pattern(regexp = "^PLATA$")
-	private String				silverEs;
 
 	@NotNull
 	private double				rewardSilver;
 
 	@NotBlank
-	@Pattern(regexp = "^BRONZE$")
 	private String				bronzeEn;
-
-	@Pattern(regexp = "^BRONCE$")
-	private String				bronzeEs;
 
 	@NotNull
 	private double				rewardBronze;

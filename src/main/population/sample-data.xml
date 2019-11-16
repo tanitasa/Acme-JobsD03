@@ -222,13 +222,13 @@
 		<property name="deadline" value="2020/05/10 10:55" />
 		<property name="description" value="descr challenge 1" />
 		<property name="goldEn" value="GOLD" />
-		<property name="goldEs" value="ORO" />
+		<!-- <property name="goldEs" value="ORO" /> -->
 		<property name="rewardGold" value="100.0" />
 		<property name="silverEn" value="SILVER" />
-		<property name="silverEs" value="PLATA" />
+		<!-- <property name="silverEs" value="PLATA" /> -->
 		<property name="rewardSilver" value="200.0" />
 		<property name="bronzeEn" value="BRONZE" />
-		<property name="bronzeEs" value="BRONCE" />
+		<!-- <property name="bronzeEs" value="BRONCE" /> -->
 		<property name="rewardBronze" value="300.0" />
 		
   	</bean>
@@ -238,13 +238,13 @@
 		<property name="deadline" value="2020/05/10 10:56" />
 		<property name="description" value="descr challenge 2" />
 		<property name="goldEn" value="GOLD" />
-		<property name="goldEs" value="ORO" />
+		<!-- <property name="goldEs" value="ORO" /> -->
 		<property name="rewardGold" value="100.0" />
 		<property name="silverEn" value="SILVER" />
-		<property name="silverEs" value="PLATA" />
+		<!-- <property name="silverEs" value="PLATA" /> -->
 		<property name="rewardSilver" value="200.0" />
 		<property name="bronzeEn" value="BRONZE" />
-		<property name="bronzeEs" value="BRONCE" />
+		<!-- <property name="bronzeEs" value="BRONCE" /> -->
 		<property name="rewardBronze" value="300.0" />
   	</bean>
   	
@@ -253,13 +253,13 @@
 		<property name="deadline" value="2020/05/10 10:57" />
 		<property name="description" value="descr challenge 3" />
 		<property name="goldEn" value="GOLD" />
-		<property name="goldEs" value="ORO" />
+		<!-- <property name="goldEs" value="ORO" /> -->
 		<property name="rewardGold" value="100.0" />
 		<property name="silverEn" value="SILVER" />
-		<property name="silverEs" value="PLATA" />
+		<!-- <property name="silverEs" value="PLATA" /> -->
 		<property name="rewardSilver" value="200.0" />
 		<property name="bronzeEn" value="BRONZE" />
-		<property name="bronzeEs" value="BRONCE" />
+		<!-- <property name="bronzeEs" value="BRONCE" /> -->
 		<property name="rewardBronze" value="300.0" />
   	</bean>
   	
@@ -268,13 +268,13 @@
 		<property name="deadline" value="2020/05/10 10:59" />
 		<property name="description" value="descr challenge 4" />
 		<property name="goldEn" value="GOLD" />
-		<property name="goldEs" value="ORO" />
+		<!-- <property name="goldEs" value="ORO" /> -->
 		<property name="rewardGold" value="100.0" />
 		<property name="silverEn" value="SILVER" />
-		<property name="silverEs" value="PLATA" />
+		<!-- <property name="silverEs" value="PLATA" /> -->
 		<property name="rewardSilver" value="200.0" />
 		<property name="bronzeEn" value="BRONZE" />
-		<property name="bronzeEs" value="BRONCE" />
+		<!-- <property name="bronzeEs" value="BRONCE" /> -->
 		<property name="rewardBronze" value="300.0" />
   	</bean>
   	
@@ -283,13 +283,13 @@
 		<property name="deadline" value="2020/05/10 10:55" />
 		<property name="description" value="descr challenge 5" />
 		<property name="goldEn" value="GOLD" />
-		<property name="goldEs" value="ORO" />
+		<!-- <property name="goldEs" value="ORO" /> -->
 		<property name="rewardGold" value="100.0" />
 		<property name="silverEn" value="SILVER" />
-		<property name="silverEs" value="PLATA" />
+		<!-- <property name="silverEs" value="PLATA" /> -->
 		<property name="rewardSilver" value="200.0" />
 		<property name="bronzeEn" value="BRONZE" />
-		<property name="bronzeEs" value="BRONCE" />
+		<!-- <property name="bronzeEs" value="BRONCE" /> -->
 		<property name="rewardBronze" value="300.0" />
   	</bean>
   	

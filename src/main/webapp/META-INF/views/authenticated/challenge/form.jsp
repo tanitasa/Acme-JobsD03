@@ -31,29 +31,20 @@
 	
 <tr><th> <acme:message code="authenticated.challenge.form.label.goals" /></th> <th><acme:message code="authenticated.challenge.form.label.rewards" /></th></tr>
 	
-	<c:if test="${Locale.getDefault().toString()=='en'}">
+	
+		<tr><th colspan="2" align="center"><acme:message code="administrator.challenge.form.label.gold" /></th>
 		<tr>
     		<td><acme:form-textbox code="" path="goldEn" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
  		 </tr>
+		<tr><th colspan="2" align="center"><acme:message code="administrator.challenge.form.label.silver" /></th>
 		<tr>
 			<td><acme:form-textbox code="" path="silverEn"  /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
 		</tr>
+		<tr><th colspan="2" align="center"><acme:message code="administrator.challenge.form.label.bronze" /></th></tr>
 		<tr>
 			<td><acme:form-textbox code="" path="bronzeEn" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
 		</tr>
-	</c:if>
-	
-	<c:if test="${Locale.getDefault().toString()=='es'}">
-			<tr>
-    		<td><acme:form-textbox code="" path="goldEs" /></td><td><acme:form-double code="" path="rewardGold" /> </td>
- 		 </tr>
-		<tr>
-			<td><acme:form-textbox code="" path="silverEs"  /> </td><td><acme:form-double code="" path="rewardSilver" /> </td>
-		</tr>
-		<tr>
-			<td><acme:form-textbox code="" path="bronzeEs" /></td><td><acme:form-double code="" path="rewardBronze" /> </td>
-		</tr>
-	</c:if>
+
 	
 	</table>
 	<br> 

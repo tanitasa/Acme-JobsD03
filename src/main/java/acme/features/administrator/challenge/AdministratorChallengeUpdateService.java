@@ -32,30 +32,6 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert errors != null;
 
-		if (entity.getGoldEn() == "GOLD") {
-			entity.setGoldEs("ORO");
-		}
-
-		if (entity.getGoldEs() == "ORO") {
-			entity.setGoldEn("GOLD");
-		}
-
-		if (entity.getSilverEn() == "SILVER") {
-			entity.setSilverEs("PLATA");
-		}
-
-		if (entity.getSilverEs() == "PLATA") {
-			entity.setSilverEn("SILVER");
-		}
-
-		if (entity.getBronzeEn() == "BRONZE") {
-			entity.setBronzeEs("BRONCE");
-		}
-
-		if (entity.getBronzeEs() == "BRONCE") {
-			entity.setBronzeEn("BRONZE");
-		}
-
 		request.bind(entity, errors);
 	}
 
@@ -65,7 +41,7 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "deadline", "description", "goldEn", "goldEs", "rewardGold", "silverEn", "silverEs", "rewardSilver", "bronzeEn", "bronzeEs", "rewardBronze");
+		request.unbind(entity, model, "title", "deadline", "description", "goldEn", "rewardGold", "silverEn", "rewardSilver", "bronzeEn", "rewardBronze");
 
 	}
 
@@ -93,30 +69,6 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 	public void update(final Request<Challenge> request, final Challenge entity) {
 		assert request != null;
 		assert entity != null;
-
-		if (entity.getGoldEn() == "GOLD") {
-			entity.setGoldEs("ORO");
-		}
-
-		if (entity.getGoldEs() == "ORO") {
-			entity.setGoldEn("GOLD");
-		}
-
-		if (entity.getSilverEn() == "SILVER") {
-			entity.setSilverEs("PLATA");
-		}
-
-		if (entity.getSilverEs() == "PLATA") {
-			entity.setSilverEn("SILVER");
-		}
-
-		if (entity.getBronzeEn() == "BRONZE") {
-			entity.setBronzeEs("BRONCE");
-		}
-
-		if (entity.getBronzeEs() == "BRONCE") {
-			entity.setBronzeEn("BRONZE");
-		}
 
 		this.repository.save(entity);
 
