@@ -43,9 +43,11 @@
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.announcement.list" action="/administrator/announcement/list"/>	
 			<acme:menu-suboption code="master.menu.administrator.companyRecords.list" action="/administrator/company-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.investorRecords.list" action="/administrator/investor-record/list"/>
 			<acme:menu-suboption code="master.menu.administrator.challenges.list" action="/administrator/challenge/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.companyRecords.create" action="/administrator/company-record/create"/>
+			<acme:menu-suboption code="master.menu.administrator.investorRecords.create" action="/administrator/investor-record/create"/>
 			<acme:menu-suboption code="master.menu.administrator.announcement.create" action="/administrator/announcement/create"/>
 			<acme:menu-suboption code="master.menu.administrator.challenges.create" action="/administrator/challenge/create"/>
 			<acme:menu-separator/>
